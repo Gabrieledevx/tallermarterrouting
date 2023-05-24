@@ -1,1 +1,44 @@
-<p>eliminar-persona works!</p>
+<div class="container">
+    <div class="form-container">
+        <div class="search-container">
+          <mat-form-field class="search-field">
+            <input matInput [(ngModel)]="searchQuery" name="searchQuery" placeholder="Buscar usuario a eliminar">
+          </mat-form-field>
+          <button mat-raised-button class="search-button" (click)="editar()">Buscar</button>
+        </div>
+
+      <h1>Eliminar Registro</h1>
+      <br>
+      
+      <form class="form-field">
+        <div class="data-field">
+          <label>Nombres: Henry Miguel</label>
+          <span>{{ nombre }}</span>
+        </div>
+  
+        <div class="data-field">
+          <label>Apellido: Ruiz Reyes </label>
+          <span>{{ apellido }}</span>
+        </div>
+  
+        <div class="data-field">
+          <label>Correo Electrónico: Henryelpro007@gmail.com</label>
+          <span>{{ correoElectronico }}</span>
+        </div>
+  
+        <div class="data-field">
+          <label>Fecha de Nacimiento: 2001-01-01</label>
+          <span>{{ fechaNacimiento }}</span>
+        </div>
+  
+        <!-- Otros campos de datos -->
+  
+        <div class="button-container">
+          <button mat-raised-button color="primary" (click)="editar()">Cancelar</button>
+          <div class="button-spacing"></div>
+          <button mat-raised-button color="warn">eliminar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

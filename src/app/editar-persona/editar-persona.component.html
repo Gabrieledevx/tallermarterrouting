@@ -1,1 +1,47 @@
-<p>editar-persona works!</p>
+<div class="container">
+    <div class="form-container">
+      <div class="search-container">
+        <mat-form-field class="search-field">
+          <input matInput [(ngModel)]="searchQuery" name="searchQuery" placeholder="Buscar usuario">
+        </mat-form-field>
+        <button mat-raised-button class="custom-button" (click)="editar()">Buscar</button>
+
+      </div>
+      <h1>Editar Registro</h1>
+      <br>
+      <form class="form-field">
+        <mat-form-field>
+          <mat-label>Nombre</mat-label>
+          <input matInput [(ngModel)]="nombre" name="nombre" required>
+        </mat-form-field>
+  
+        <mat-form-field>
+          <mat-label>Apellido</mat-label>
+          <input matInput [(ngModel)]="apellido" name="apellido" required>
+        </mat-form-field>
+  
+        <mat-form-field>
+          <mat-label>Correo Electrónico</mat-label>
+          <input matInput [(ngModel)]="correoElectronico" name="correoElectronico" required>
+        </mat-form-field>
+  
+        <mat-form-field class="form-field">
+            <mat-label>Fecha de Nacimiento</mat-label>
+            <input matInput [matDatepicker]="picker" [(ngModel)]="fechaNacimiento" name="fechaNacimiento" required>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-hint>MM/DD/YYYY</mat-hint>
+          </mat-form-field>
+
+
+
+          <div class="button-container">
+            <button mat-raised-button color="primary" (click)="editar()">Cancelar</button>
+            <div class="button-spacing"></div>
+            <button mat-raised-button color="warn">Guardar Cambios</button>
+          </div>
+          
+      </form>
+    </div>
+  </div>
+  

@@ -1,1 +1,64 @@
-<p>registrar-personas works!</p>
+<div class="container">
+  <mat-card>
+    <mat-card-content>
+      <h2>Formulario de Registro</h2>
+      <br />
+      <form (ngSubmit)="registrar()" class="form-container">
+        <mat-form-field class="form-field">
+          <mat-label>Nombre</mat-label>
+          <input matInput [(ngModel)]="nombre" name="nombre" required />
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+          <mat-label>Apellido</mat-label>
+          <input matInput [(ngModel)]="apellido" name="apellido" required />
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+          <mat-label>Correo Electrónico</mat-label>
+          <input
+            matInput
+            [(ngModel)]="correoElectronico"
+            name="correoElectronico"
+            required
+          />
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+          <mat-label>CI</mat-label>
+          <input matInput [(ngModel)]="ci" name="ci" required />
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+          <mat-label>Fecha de Nacimiento</mat-label>
+          <input
+            matInput
+            [matDatepicker]="picker"
+            [(ngModel)]="fechaNacimiento"
+            name="fechaNacimiento"
+            required
+          />
+          <mat-datepicker-toggle
+            matSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+          <mat-hint>MM/DD/YYYY</mat-hint>
+        </mat-form-field>
+
+        <mat-checkbox
+          [(ngModel)]="disponibilidadHorario"
+          name="disponibilidadHorario"
+        >
+          Disponibilidad de Horario
+        </mat-checkbox>
+
+        <div class="button-container">
+          <button mat-raised-button color="primary">Cancelar</button>
+          <div class="button-spacing"></div>
+          <button mat-raised-button color="warn">Registrar</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

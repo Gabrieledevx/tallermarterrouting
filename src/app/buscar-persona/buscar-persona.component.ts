@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./buscar-persona.component.css']
 })
 export class BuscarPersonaComponent {
-
+  nombrePersona: any;
+  personaEncontrada: any;
 }

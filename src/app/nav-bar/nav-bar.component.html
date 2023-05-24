@@ -1,1 +1,19 @@
-<p>nav-bar works!</p>
+<nav class="navbar bg-black" data-bs-theme="dark">
+    <div class="container-fluid">
+        <span style="text-align: center; color: white" routerLink="/listar">Personas | GMedranda</span>
+        <div class="ms-auto">
+            <a class="btn text-white" routerLink="/listar">Listado de personas</a>
+            <a class="btn text-white" routerLink="/registrar">Registrar</a>
+            <a class="btn text-white" routerLink="/editar">Editar</a>
+            <a class="btn text-white" routerLink="/eliminar">Eliminar</a>
+            <a class="btn text-white" routerLink="/buscar">Buscar</a>
+        </div>
+        <button class="btn btn-primary position-relative ms-3">
+            Inbox
+            <span class="position-absolute top-0 end-3 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">nuevas notificaciones</span>
+            </span>
+        </button>
+    </div>
+</nav>

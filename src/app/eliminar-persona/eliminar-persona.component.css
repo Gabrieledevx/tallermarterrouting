@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-field {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+
+  .search-container {
+    display: flex;
+    align-items: right;
+  }
+  
+  .search-field {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    height: 100%;
+    min-width: 100px; /* Ajusta el ancho mínimo según tus necesidades */
+  }
+  
+  .search-button mat-icon {
+    color: #000;
+  }
+  
+  .search-button {
+    height: 100%;
+  }
+  
+  .search-button button {
+    height: 100%;
+  }
+
+  .mat-form-field {
+    width: 100%;
+  }
+  
+  .mat-form-field .mat-form-field-wrapper {
+    padding-bottom: 0; /* Ajusta el espacio inferior según tus necesidades */
+  }
+  
+  .mat-form-field .mat-form-field-underline {
+    background-color: #ccc;
+  }  
+
+  .button-spacing {
+    margin-left: 20px; /* Ajusta el valor según el espaciado deseado */
+  }
+  
